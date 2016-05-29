@@ -1,0 +1,18 @@
+mqtt:
+  build: mqtt/
+  volumes:
+    - ./data/mqtt:/data
+  ports:
+    - 1883:1883
+    - 8883:8883
+recorder:
+  build: recorder/
+  links:
+    - mqtt
+  volumes:
+    - ./data/recorder:/data
+  ports:
+    - 127.0.0.1:8083:8083
+  environment:
+    - OTR_USER=recoder
+    - OTR_PASS=ultrasecret

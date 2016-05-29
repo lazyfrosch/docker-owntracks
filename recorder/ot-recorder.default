@@ -1,0 +1,8 @@
+#(@)ot-recorder.default
+#
+# Specify global configuration options for the OwnTracks Recorder
+# and its associated utilities to override compiled-in defaults.
+
+OTR_STORAGEDIR = "/data/store"
+
+# user config

@@ -1,0 +1,4 @@
+.*.sw[op]
+data/
+ssl.sh
+docker-compose.yml
